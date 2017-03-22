@@ -1412,6 +1412,7 @@ var color = d3.scale.category20();
 var force = d3.layout.force()
     .charge(-50)
     .linkDistance(500)
+    .gravity(0.5)
     .size([width, height]);
 
 //Append a SVG to the body of the html page. Assign this SVG as an object to svg
